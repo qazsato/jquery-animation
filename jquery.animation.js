@@ -1,12 +1,11 @@
 /**
  * jquery.animation.js
- * @author  kazuki-sato
  * @version 1.0.0
  */
 (function($){
 	/**
 	 * cssアニメーションを実行します。(IE9以降のモダンブラウザのみ対象)
-	 * @param  {String} animClass (必須)アニメーションのクラス名
+	 * @param  {[String]} animClass (必須)アニメーションのクラス名
 	 * @param  {Function} animStart アニメーション実行前に実行されるコールバック
 	 * @param  {Function} animEnd   アニメーション実行後に実行されるコールバック
 	 * @return {jQuertObject}
@@ -64,7 +63,7 @@
 			},
 			/**
 			 * 指定された回数アニメーションを実行します。(デフォルトinfinite)
-			 * @param  {Number} cnt 再正回数
+			 * @param  {Number} cnt 再生回数
 			 */
 			repeat: function (cnt) {
 				var count = cnt ? String(cnt): 'infinite';
