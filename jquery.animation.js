@@ -1,6 +1,6 @@
 /**
  * jquery.animation.js
- * @version 1.0.0
+ * @author qaz
  */
 (function($){
 	/**
@@ -22,11 +22,11 @@
 			$(this).unbind('animationend webkitAnimationEnd');
 			$(this).removeClass('animating default-animation-config ' + animClass);
 			$(this).css({
-				'-webkit-animation':'',
-				'-moz-animation':	'',
-				'-ms-animation':	'',
-				'-o-animation':		'',
-				'animation':		''
+				'-webkit-animation': '',
+				'-moz-animation': '',
+				'-ms-animation': '',
+				'-o-animation':	'',
+				'animation': ''
 			});
 		};
 
@@ -40,11 +40,11 @@
 			 */
 			play: function () {
 				$(this).css({
-					'animation-play-state':			'running',
-					'-o-animation-play-state':		'running',
-					'-ms-animation-play-state':		'running',
-					'-moz-animation-play-state':	'running',
-					'-webkit-animation-play-state':	'running'
+					'-webkit-animation-play-state':	'running',
+					'-moz-animation-play-state': 'running',
+					'-ms-animation-play-state':	'running',
+					'-o-animation-play-state': 'running',
+					'animation-play-state': 'running'
 				});
 				return $(this);
 			},
@@ -53,11 +53,11 @@
 			 */
 			pause: function () {
 				$(this).css({
-					'animation-play-state':			'paused',
-					'-o-animation-play-state':		'paused',
-					'-ms-animation-play-state':		'paused',
-					'-moz-animation-play-state':	'paused',
-					'-webkit-animation-play-state':	'paused'
+					'-webkit-animation-play-state':	'paused',
+					'-moz-animation-play-state': 'paused',
+					'-ms-animation-play-state':	'paused',
+					'-o-animation-play-state': 'paused',
+					'animation-play-state': 'paused'
 				});
 				return $(this);
 			},
@@ -68,16 +68,16 @@
 			repeat: function (cnt) {
 				var count = cnt ? String(cnt): 'infinite';
 				$(this).css({
-					'animation-iteration-count':			count,
-					'-o-animation-iteration-count':			count,
-					'-ms-animation-iteration-count':		count,
-					'-moz-animation-iteration-count':		count,
-					'-webkit-animation-iteration-count':	count
+					'-webkit-animation-iteration-count': count,
+					'-moz-animation-iteration-count': count,
+					'-ms-animation-iteration-count': count,
+					'-o-animation-iteration-count': count,
+					'animation-iteration-count': count
 				});
 				return $(this);
 			},
 			/**
-			 * 状態に関わらずアニメーションを停止します。
+			 * アニメーションの状態に関わらずアニメーションを停止します。
 			 */
 			stop: function () {
 				onAnimEnd();
